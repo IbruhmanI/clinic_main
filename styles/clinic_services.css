@@ -1,0 +1,54 @@
+.main{
+  position: relative;
+  display: flex;
+  right: 0;
+  left: 0;
+  background-image: url(../pics/doctor_using_mechanical_tensiometer_medium_shot_1200x675.jpg);
+  overflow: hidden;
+  background-size: 100%;
+}
+.main::after{
+  content: "";
+  background-color:  rgba(3, 166, 216, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.services{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: top;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+ul{
+  list-style-position: inside;
+  padding: 0;
+  list-style: none;
+}
+ul li{
+  margin-bottom: 15px;
+
+}
+.list{
+  height: fit-content;
+  background-color: white;
+  padding: 10px 20px;
+}
+.service-description{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: fit-content;
+  padding: 20px;
+  background-color: white;
+}
+.service-description > div:not(:last-child){
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
